@@ -1,0 +1,22 @@
+body{
+    background-color:#f7f9fc;
+    margin:40px;
+    border: 1px solid;
+    .app{
+        display: flex;
+        flex-direction: column;
+        .header{
+            height:76px
+        }
+        .container--chart{
+            height:400px;
+            margin-top:20px;
+            border:1px solid;
+        }
+        .container--table{
+            height:400px;
+            margin-top:20px;
+            border:1px solid;
+        }
+    }
+}
