@@ -1,11 +1,12 @@
-import React from 'react'
-import './App.css'
+
+import React from 'react';
+import './App.css';
+import { ChartCard } from './components/cards';
 
 const App = (): React.ReactElement => {
   return (
     <div className="app">
-      <h1 className="header">Welcome to Lumini UI</h1>
-      <div className="container--chart">charts goes here</div>
+      <ChartCard />
       <div className="container--table">table goes here</div>
     </div>
   );
