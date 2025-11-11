@@ -80,7 +80,9 @@ body {
     .container--table {
       height: 400px;
       margin-top: 20px;
-      border: 1px solid;
     }
   }
+}
+.dashboard-extension-container{
+    height: 735px !important;
 }
