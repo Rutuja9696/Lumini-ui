@@ -2,7 +2,7 @@
 import React from 'react';
 import './App.css';
 import { ChartCard } from './components/cards';
-import UserMetricsTable from './UserMetrics/UserMetricsTable'
+import UserMetricsTable from './UserMetrics/UserMetricsTable';
 
 const App = (): React.ReactElement => {
   return (

@@ -76,7 +76,7 @@ export function DataTable<TData, TValue>({
       <div className="flex items-center justify-between">
         <div className="flex items-center py-4">
           <Input
-            placeholder="Filter emails..."
+            placeholder="Filter ..."
             value={(table.getColumn('email')?.getFilterValue() as string) ?? ''}
             onChange={(event) =>
               table.getColumn('email')?.setFilterValue(event.target.value)
@@ -111,7 +111,7 @@ export function DataTable<TData, TValue>({
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-      <div className="overflow-hidden rounded-md border" style={ { height:"287px" } }>
+      <div className="overflow-hidden rounded-md border">
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (

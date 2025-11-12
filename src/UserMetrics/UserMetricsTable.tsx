@@ -27,7 +27,7 @@ const UserMetricsTable = () => {
     console.log(data);
 
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto p-5">
       <DataTable columns={userMetricColumns} data={data} />
     </div>
   );

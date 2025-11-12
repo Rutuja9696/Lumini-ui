@@ -49,6 +49,7 @@ export const userMetricColumns: ColumnDef<UserMetric>[] = [
   {
     accessorKey: 'uid',
     header: ({ column }) => (
+      <div className="text-center">
       <Button
         variant="ghost"
         onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
@@ -56,6 +57,7 @@ export const userMetricColumns: ColumnDef<UserMetric>[] = [
         UID
         <ArrowUpDown className="ml-2 h-4 w-4" />
       </Button>
+      </div>
     ),
     cell: ({ row }) => (
       <div className="text-center font-medium">{row.getValue('uid')}</div>
@@ -64,13 +66,13 @@ export const userMetricColumns: ColumnDef<UserMetric>[] = [
   {
     accessorKey: 'userName',
     header: ({ column }) => (
-      <Button
+      <div className="text-center"><Button
         variant="ghost"
         onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
       >
         User Name
         <ArrowUpDown className="ml-2 h-4 w-4" />
-      </Button>
+      </Button></div>
     ),
     cell: ({ row }) => (
       <div className="text-center font-medium">{row.getValue('userName')}</div>
@@ -79,13 +81,13 @@ export const userMetricColumns: ColumnDef<UserMetric>[] = [
   {
     accessorKey: 'mostVisitedTopic',
     header: ({ column }) => (
-      <Button
+      <div className="text-center"><Button
         variant="ghost"
         onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
       >
         Most Visited Topic
         <ArrowUpDown className="ml-2 h-4 w-4" />
-      </Button>
+      </Button></div>
     ),
     cell: ({ row }) => (
       <div className="text-center font-medium">
@@ -96,13 +98,13 @@ export const userMetricColumns: ColumnDef<UserMetric>[] = [
   {
     accessorKey: 'lastUserAction',
     header: ({ column }) => (
-      <Button
+      <div className="text-center"><Button
         variant="ghost"
         onClick={() => column.toggleSorting(column.getIsSorted() === 'asc')}
       >
         Last User Action
         <ArrowUpDown className="ml-2 h-4 w-4" />
-      </Button>
+      </Button></div>
     ),
     cell: ({ row }) => (
       <div className="text-center font-medium">
